@@ -1,0 +1,12 @@
+{
+  "name": "employee-management-system",
+  "version": "1.1.0",
+  "description": "Employee management system for an organization",
+  "scripts" : {
+    "test": "echo \"No tests yet...\""
+  },
+  "author": "",
+  "dependencies": {
+    "mongodb": "^4.4.6"
+  }
+}

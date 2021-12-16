@@ -1,0 +1,42 @@
+<!-- <p>registration works!</p> -->
+
+<div>
+    <mat-card>
+        <mat-form-field>
+            <form class="example-form">
+                <!-- <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Company (disabled)</mat-label>
+                  <input matInput disabled value="Google">
+                </mat-form-field> -->
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput>
+                  </mat-form-field></td>
+                </tr></table>
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>City</mat-label>
+                    <input matInput placeholder="Ex. San Francisco">
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>State</mat-label>
+                    <input matInput placeholder="Ex. California">
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Postal Code</mat-label>
+                    <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
+                    <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                  </mat-form-field></td>
+                </tr></table>
+              </form>
+              
+        </mat-form-field>
+    </mat-card>
+</div>
