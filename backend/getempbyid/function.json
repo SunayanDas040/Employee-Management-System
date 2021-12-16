@@ -6,7 +6,7 @@
       "direction": "in",
       "name": "req",
       "methods": ["get"],
-      "route": "dishes/{id}"
+      "route": "emp/{id}"
     },
     {
       "type": "http",
@@ -14,5 +14,4 @@
       "name": "res"
     }
   ]
-  
 }

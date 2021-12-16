@@ -11,19 +11,10 @@
        body: 'Dish data is required! '
      }
    }
-//    else{
-//     const res = await Dishes.find({})
-//     const body = await res.toArray()
-  
-//     connection.close()
-  
-//     context.res = {
-//       status: 200,
-//       body
-//     }
-//   }
  
+   const { db, connection } = await createMongoClient()
  
+   const Dishes = db.collection('EmployeeTask')
  
    try {
      const dishes = await Dishes.insertOne(emp)
@@ -40,7 +31,6 @@
        body: 'Error creating a new Dish: '+ error
      }
    }
-  
-}
+ }
  
  

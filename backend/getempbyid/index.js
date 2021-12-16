@@ -15,7 +15,7 @@ module.exports = async function (context, req) {
 
   const { db, connection } = await createMongoClient()
 
-  const Dishes = db.collection('Employee')
+  const Dishes = db.collection('EmployeeTask')
 
   try {
     const body = await Dishes.findOne({ _id: ObjectID(id) })
