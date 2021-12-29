@@ -3,7 +3,7 @@
  const createMongoClient = require('../shared/mongo');
 
  module.exports = async function (context, req) {
-   const emp = req.body || {}
+   const emp  = req.body || {}
  
    if (emp) {
      context.res = {

@@ -8,7 +8,7 @@
    if (emp) {
      context.res = {
        status: 400,
-       body: 'Dish data is required! '
+       body: 'task data is required! '
      }
    }
  
@@ -28,7 +28,7 @@
    } catch (error) {
      context.res = {
        status: 500,
-       body: 'Error creating a new Dish: '+ error
+       body: 'Error creating a new Task: '+ error
      }
    }
  }

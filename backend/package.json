@@ -7,8 +7,9 @@
   },
   "author": "",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.2.2"
   }
 }
-
-
