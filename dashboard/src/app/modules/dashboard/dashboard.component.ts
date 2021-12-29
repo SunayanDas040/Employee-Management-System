@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { DashboardService } from '../dashboard.service';
+// import { DashboardService } from '../dashboard.service';
 
 export interface PeriodicElement {
   name: string;
@@ -49,11 +49,9 @@ export class DashboardComponent implements OnInit {
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
 
-  constructor( private dashboardService: DashboardService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.dashboardService.bigChart();
-    this.dashboardService.cards();
     this.dataSource.paginator = this.paginator;
   }
 

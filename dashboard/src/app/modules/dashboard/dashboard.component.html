@@ -1,81 +1,69 @@
 <!-- <p>dashboard works!</p> -->
 
 <div>
-    <!-- Big Line Chart -->
-    <app-widget-area [data]="bigChart"></app-widget-area>
+
+  <div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap="20px">
+      
+      <div fxLayout="column" fxLayoutAlign="space-between-center" fxLayoutGap="20px" fxFlex="25" class="stats-cards">
+        <mat-card fxFlex="35">
+          <mat-card-title>Review</mat-card-title>
+          <mat-card-content>
+            <img src="https://cdn.thewirecutter.com/wp-content/uploads/2020/01/sleepweek-lowres-2x1-1145985262.jpg?auto=webp&quality=75&crop=2:1&width=1024" alt="">
+            <p>Hurrah! You've nothing to review.</p>
+          </mat-card-content>
+        </mat-card>
+  
+        <mat-card fxFlex='25'>
+
+          <mat-card-title>Shortcuts</mat-card-title>
+          <mat-card-content>
+            <a href="" mat-list-item routerLink="/profile">Profile</a>
+            <a href="" mat-list-item routerLink="/task">Task</a>
+            <a href="" mat-list-item routerLink="/apply-leave">Apply For Leave</a>
+          </mat-card-content>
+            
+        </mat-card>
+
+      </div>
+
+      <div fxLayout="column" fxLayoutAlign="space-between-center" fxLayoutGap="20px" fxFlex="25" class="stats-cards">
+        <mat-card fxFlex="40">
+          <mat-card-content>
+            <h5>Date</h5>
+
+            <h6>Clock Timer</h6>
+
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button style="background-color: skyblue;">Sign In</button>
+          </mat-card-actions>
+        </mat-card>
+  
+        <mat-card fxFlex='60'>
+            <mat-card-title>Payslip</mat-card-title>
+        </mat-card>
+
+      </div>
+
+      <div fxLayout="column" fxLayoutAlign="space-between-center" fxLayoutGap="20px" fxFlex="25" class="stats-cards">
+        <mat-card>
+          <h2>Upcoming Holidays</h2>
+          <mat-card-content>
+            
+          </mat-card-content>
+        </mat-card>
+  
+        <mat-card fxFlex='25'>
+            <h2>IT Decarations</h2>
+        </mat-card>
+  
+        <mat-card fxFlex='25'>
+            <h2>Track</h2>
+        </mat-card>
+
+      </div>
+
+  </div>
+
 </div>
 
-<br>
-
-<mat-divider></mat-divider>
-
-<br>
-
-<div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap="20px" class="stats-cards">
-    <mat-card fxFlex='25'>
-        <app-widget-card label="Users" total="18k" percentage="50" [data]="cards"></app-widget-card>
-    </mat-card>
-
-    <mat-card fxFlex='25'>
-        <app-widget-card label="Users retention" total="28k" percentage="70" [data]="cards"></app-widget-card>
-    </mat-card>
-
-    <mat-card fxFlex='25'>
-        <app-widget-card label="New Users" total="15k" percentage="30" [data]="cards"></app-widget-card>
-    </mat-card>
-
-    <mat-card fxFlex='25'>
-        <app-widget-card label="Previous Users" total="40k" percentage="80" [data]="cards"></app-widget-card>
-    </mat-card>
-</div>
-
-<br>
-
-<mat-divider></mat-divider>
-
-<br>
-
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
-    <div fxFlex="60">
-        <div class="mat-elevation-z8">
-            <table mat-table [dataSource]="dataSource">
-          
-              <!-- Position Column -->
-              <ng-container matColumnDef="position">
-                <th mat-header-cell *matHeaderCellDef> No. </th>
-                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-              </ng-container>
-          
-              <!-- Name Column -->
-              <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef> Name </th>
-                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-              </ng-container>
-          
-              <!-- Weight Column -->
-              <ng-container matColumnDef="weight">
-                <th mat-header-cell *matHeaderCellDef> Weight </th>
-                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-              </ng-container>
-          
-              <!-- Symbol Column -->
-              <ng-container matColumnDef="symbol">
-                <th mat-header-cell *matHeaderCellDef> Symbol </th>
-                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-              </ng-container>
-          
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
-          
-            <mat-paginator [pageSizeOptions]="[5, 10, 20]"
-                           showFirstLastButtons 
-                           aria-label="Select page of periodic elements">
-            </mat-paginator>
-          </div>
-          
-    </div>
-    <div fxFlex="40">
-        <app-widget-pie></app-widget-pie>
-    </div>
-</div>

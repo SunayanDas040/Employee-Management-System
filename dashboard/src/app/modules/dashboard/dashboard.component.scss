@@ -1,9 +1,19 @@
 .stats-cards {
-    .mat-card {
-        overflow: hidden;
-    }
+    margin-left: 50px;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    margin-left: 70px;
 }
 
 table {
     width: 100%;
+}
+
+.mat-card {
+    // overflow: hidden;
+    height: 300px;
+    // width: 100px;
 }

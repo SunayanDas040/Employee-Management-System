@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardComponent } from './card.component';
+import { ApplyLeaveComponent } from './apply-leave.component';
 
-describe('CardComponent', () => {
-  let component: CardComponent;
-  let fixture: ComponentFixture<CardComponent>;
+describe('ApplyLeaveComponent', () => {
+  let component: ApplyLeaveComponent;
+  let fixture: ComponentFixture<ApplyLeaveComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
+      declarations: [ ApplyLeaveComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardComponent);
+    fixture = TestBed.createComponent(ApplyLeaveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

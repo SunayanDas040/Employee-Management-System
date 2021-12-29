@@ -1,0 +1,56 @@
+<!-- <p>login works!</p> -->
+
+<div>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <section>
+
+        <section class="is-center">
+            <button class="btn" mat-button (click)="onClickEmployee()">Employee Login</button>
+            <button class="btn" mat-button (click)="onClickAdmin()">Admin Login</button>
+        </section>
+
+        <mat-card *ngIf="isAdmin; else elseBlock">
+            <mat-card-title>Admin Login</mat-card-title>
+            <mat-card-content>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Admin ID</mat-label>
+                    <input matInput type="number" [(ngModel)]="adminId">
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" [(ngModel)]="adminPassword">
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button (click)="adminLogin()">Login</button>
+            </mat-card-actions>
+        </mat-card>
+
+        <ng-template #elseBlock>
+
+            <mat-card>
+                <mat-card-title>Employee Login</mat-card-title>
+                <mat-card-content>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Employee ID</mat-label>
+                        <input matInput type="number" [(ngModel)]="employeeId">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" [(ngModel)]="employeePassword">
+                    </mat-form-field>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button (click)="employeeLogin()">Login</button>
+                </mat-card-actions>
+            </mat-card>
+
+        </ng-template>
+
+    </section>
+    <footer></footer>
+</div>
