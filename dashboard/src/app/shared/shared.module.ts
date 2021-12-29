@@ -11,10 +11,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list'; 
 import { RouterModule } from '@angular/router';
-import { AreaComponent } from './widgets/area/area.component';
+import { MatExpansionModule } from '@angular/material/expansion'
+// import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
-import { CardComponent } from './widgets/card/card.component';
-import { PieComponent } from './widgets/pie/pie.component';
+import { MatSelectModule } from '@angular/material/select';
+// import { CardComponent } from './widgets/card/card.component';
+// import { PieComponent } from './widgets/pie/pie.component';
 // import { MatCardModule } from '@angular/material/card';
 // import {MatCardModule} from '@angular/material/card';
 
@@ -25,9 +27,9 @@ import { PieComponent } from './widgets/pie/pie.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent,
-    CardComponent,
-    PieComponent
+    // AreaComponent,
+    // CardComponent,
+    // PieComponent
   ],
   imports: [
     CommonModule,
@@ -40,15 +42,17 @@ import { PieComponent } from './widgets/pie/pie.component';
     MatListModule,
     RouterModule,
     HighchartsChartModule,
+    MatExpansionModule,
+    MatSelectModule
     // MatCardModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent,
-    CardComponent,
-    PieComponent
+    // AreaComponent,
+    // CardComponent,
+    // PieComponent
   ]
 })
 export class SharedModule { }

@@ -5,30 +5,36 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.module';
-// import { MatCardModule } from '@angular/material/card';
-// import { PostsComponent } from './modules/posts/posts.component';
-// import { HeaderComponent } from './shared/components/header/header.component';
-// import { FooterComponent } from './shared/components/footer/footer.component';
-// import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
-// import { DefaultComponent } from './layouts/default/default.component';
-// import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+// import { ProfileComponent } from './modules/profile/profile.component';
+// import { ApplyLeaveComponent } from './modules/apply-leave/apply-leave.component';
+// import { TaskComponent } from './modules/task/task.component';
+// import { LeaveComponent } from './modules/leave/leave.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // PostsComponent,
-    // HeaderComponent,
-    // FooterComponent,
-    // SidebarComponent,
-    // DefaultComponent,
-    // DashboardComponent
+    LoginComponent,
+    // ProfileComponent,
+    // ApplyLeaveComponent,
+    // TaskComponent,
+    // LeaveComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DefaultModule,
-    // MatCardModule
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

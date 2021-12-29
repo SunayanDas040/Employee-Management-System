@@ -1,8 +1,8 @@
 {
-  "name": "employee-management-system",
-  "version": "1.1.0",
-  "description": "Employee management system for an organization",
-  "scripts" : {
+  "name": "emp-management-system",
+  "version": "1.0.0",
+  "description": "Employee Management System",
+  "scripts": {
     "test": "echo \"No tests yet...\""
   },
   "author": "",
