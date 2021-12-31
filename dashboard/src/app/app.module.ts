@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 // import { ApplyLeaveComponent } from './modules/apply-leave/apply-leave.component';
 // import { TaskComponent } from './modules/task/task.component';
 // import { LeaveComponent } from './modules/leave/leave.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatExpansionModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

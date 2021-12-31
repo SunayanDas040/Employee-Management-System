@@ -23,6 +23,8 @@ import { MatDatepickerModule } from "@angular/material/datepicker"
 import { MatInputModule } from '@angular/material/input';
 import { ProfileComponent } from 'src/app/modules/profile/profile.component';
 import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -53,7 +55,10 @@ import {MatListModule} from '@angular/material/list';
     ReactiveFormsModule,
     MatDatepickerModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule,
+    MatGridListModule
+
   ],
   providers: [
     // DashboardService
