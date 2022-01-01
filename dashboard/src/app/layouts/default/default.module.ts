@@ -25,7 +25,7 @@ import { ProfileComponent } from 'src/app/modules/profile/profile.component';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { QuickLinkComponent } from 'src/app/modules/quick-link/quick-link.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +35,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ApplyLeaveComponent,
     ProfileComponent,
     DashboardComponent,
+    QuickLinkComponent 
     // HeaderComponent,
     // FooterComponent,
     // SidebarComponent

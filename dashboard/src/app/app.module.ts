@@ -17,11 +17,13 @@ import { FormsModule } from '@angular/forms';
 // import { LeaveComponent } from './modules/leave/leave.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
+// import { QuickLinkComponent } from './modules/quick-link/quick-link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    // QuickLinkComponent,
     // ProfileComponent,
     // ApplyLeaveComponent,
     // TaskComponent,

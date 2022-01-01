@@ -1,43 +1,5 @@
 <div class="container" class="new">
-    <style>
-       
-        .sidenav {
-          width: 130px;
-          position: fixed;
-          z-index: 1;
-          top: 100px;
-          left: 200pxx;
-          background: none;
-          overflow-x: hidden;
-          padding: 8px 0;
-        }
-        
-        .sidenav a {
-          padding: 6px 8px 6px 16px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #2196F3;
-          display: block;
-        }
-        
-        .sidenav a:hover {
-          color: #064579;
-        }
-        
-
-        
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-        </style>
-    
-        <div class="sidenav">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#clients">Clients</a>
-          <a href="#contact">Contact</a>
-        </div>
+   <app-quick-link></app-quick-link>
 <div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap="40px" class="spa">
       <mat-accordion style="width: 800px;">
     <mat-expansion-panel (opened)="panelOpenState = true"
@@ -52,9 +14,6 @@
           <mat-grid-list cols="3" rowHeight="80px" gutterSize="5px"> 
               <mat-grid-tile rowspan="2"><img src="./../../../assets/1.jpg" width="150px" height="150px"></mat-grid-tile>
               <mat-grid-tile colspan="2" >
-                  <!-- <h4 style="padding-right: 100px;"><b>Name:</b></h4>&nbsp;
-                  <br>
-                  <p>Ranit Mondal</p> -->
                   <p style="padding-right: 250px;">
                       Name:<br>
                       Ranit Mondal
@@ -73,29 +32,20 @@
                   </p>
               </mat-grid-tile>
               <mat-grid-tile>
-                
-                      <p style="padding-right: auto">location:<br>
-                        Kolkata</p>
-                      
-                  
+                <p style="padding-right: auto">location:<br>
+                        Kolkata</p>    
               </mat-grid-tile>
               <mat-grid-tile>
                 <p style="padding-left: 70px ;">
                     Primary Contact Number:
                     9547577548
                 </p>
-               <!-- <mat-grid-tile-header>
-                   Primary Contact Number:
-               </mat-grid-tile-header> -->
-              
               </mat-grid-tile>
               <mat-grid-tile><p style="padding-right: auto">Extention</p></mat-grid-tile>
-       
           </mat-grid-list>
         </mat-card-content>
       </mat-card>
     </mat-expansion-panel>
   </mat-accordion>
-
 </div>
 </div>
