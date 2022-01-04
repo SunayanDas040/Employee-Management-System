@@ -6,6 +6,7 @@ import { ApplyLeaveComponent } from './modules/apply-leave/apply-leave.component
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LeaveComponent } from './modules/leave/leave.component';
 import { ProfileComponent } from './modules/profile/profile.component';
+import { QuickLinkComponent } from './modules/quick-link/quick-link.component';
 import { TaskComponent } from './modules/task/task.component';
 // import { PostsComponent } from './modules/posts/posts.component';
 
@@ -31,7 +32,10 @@ const routes: Routes = [
     },
     {
       path: "profile",
-      component: ProfileComponent
+      component: ProfileComponent,
+      children:[
+        {path:'leave',component:LeaveComponent}
+      ]
     }
   ]
   },
@@ -39,6 +43,10 @@ const routes: Routes = [
     path: "login",
     component: LoginComponent
   },
+  {
+    path:"abc",
+    component:QuickLinkComponent
+  }
 ];
 
 @NgModule({

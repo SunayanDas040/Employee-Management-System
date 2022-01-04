@@ -26,6 +26,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { QuickLinkComponent } from 'src/app/modules/quick-link/quick-link.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { QuickLinkComponent } from 'src/app/modules/quick-link/quick-link.compon
     MatInputModule,
     MatListModule,
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
+    MatStepperModule
 
   ],
   providers: [

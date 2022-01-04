@@ -1,5 +1,38 @@
 <div class="container" class="new">
-   <app-quick-link></app-quick-link>
+   <!-- <app-quick-link></app-quick-link> -->
+   <style>
+    .sidenav {
+       width: 130px;
+       position: fixed;
+       z-index: 1;
+       top: 100px;
+       left: 200pxx;
+       background: none;
+       overflow-x: hidden;
+       padding: 8px 0;
+     }
+     .sidenav a {
+       padding: 6px 8px 6px 16px;
+       text-decoration: none;
+       font-size: 25px;
+       color: #2196F3;
+       display: block;
+     }
+     .sidenav a:hover {
+       color: #064579;
+     }
+     @media screen and (max-height: 450px) {
+       .sidenav {padding-top: 15px;}
+       .sidenav a {font-size: 18px;}
+     }
+</style>
+<div class="sidenav">
+    <a routerLink="/profile/leave">About</a>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+    <router-outlet></router-outlet>
+  </div>
 <div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap="40px" class="spa">
       <mat-accordion style="width: 800px;">
     <mat-expansion-panel (opened)="panelOpenState = true"
